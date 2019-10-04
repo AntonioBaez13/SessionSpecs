@@ -10,9 +10,9 @@ namespace Session.SeleniumFramework.Pages
     public class HomePage
     {
         private readonly IWebDriver webDriver;
-        private readonly UserPreferencePage userPreferencePage;
+        private readonly UserPreferencesPage userPreferencePage;
 
-        public HomePage(IWebDriver webDriver, UserPreferencePage userPreferencePage)
+        public HomePage(IWebDriver webDriver, UserPreferencesPage userPreferencePage)
         {
             this.webDriver = webDriver;
             this.userPreferencePage = userPreferencePage;

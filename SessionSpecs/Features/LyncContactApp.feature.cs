@@ -86,21 +86,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
  testRunner.Then("I can see the Lync App setting switch in my Basic Settings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 8
- testRunner.And("Lync App setting switch is OFF by default", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 9
- testRunner.Given("I am in hub as a \'<Role>\' user", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 10
- testRunner.And("I have a referral in \'<ReferralStatus>\' state", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 11
-testRunner.When("I opt to instruct the referral", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 12
-testRunner.Then("I should see a new registration system \'Other\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 13
- testRunner.And("Instruction reference no. should not be mandatory", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 14
- testRunner.But("I shouldn\'t be able to  specify a reference number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "But ");
-#line 15
- testRunner.And("link system to a hub instruction", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("Lync App setting switch is ON by default", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }

@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Session.SeleniumFramework.Enums;
 using TechTalk.SpecFlow;
 
 namespace SessionSpecs.Hooks
@@ -22,7 +23,7 @@ namespace SessionSpecs.Hooks
         public static ContainerBuilder BeforeScenarioConfigureObjects()
         {
             var containerBuilder = new ContainerBuilder();
-            webDriver = WebDriverFactory.Create();
+            webDriver = WebDriverFactory.Create(Browser.Chrome);
             containerBuilder.RegisterInstance(webDriver);
 
 
