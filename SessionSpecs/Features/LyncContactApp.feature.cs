@@ -86,7 +86,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
  testRunner.Then("I can see the Lync App setting switch in my Basic Settings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 8
- testRunner.And("Lync App setting switch is ON by default", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("Lync App setting switch is OFF by default", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }

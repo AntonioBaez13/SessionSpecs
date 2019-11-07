@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium.IE;
 using Session.SeleniumFramework.Enums;
+using Session.SeleniumFramework.Extensions;
 
 namespace Session.SeleniumFramework.Factories
 {
@@ -28,7 +29,6 @@ namespace Session.SeleniumFramework.Factories
             }
 
             webDriver.Manage().Window.Maximize();
-
             return webDriver;
         }
     }

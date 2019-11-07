@@ -27,12 +27,12 @@ namespace SessionSpecs.Steps
 
             Assert.IsTrue(isHubSkypeSwitchPresent, "I can't see the Lync App setting switch in my Basic Settings");
         }
-        [Then(@"Lync App setting switch is ON by default")]
-        public void ThenLyncAppSettingSwitchIsOnByDefault()
+        [Then(@"Lync App setting switch is OFF by default")]
+        public void ThenLyncAppSettingSwitchIsOffByDefault()
         {
-            var isHubSkypeSwitchOnByDefault = this.userPreferencesPage.IsHubSkypeSwitchOnByDefault();
+            var isHubSkypeSwitchOffByDefault = this.userPreferencesPage.IsHubSkypeSwitchOffByDefault();
 
-            Assert.IsTrue(isHubSkypeSwitchOnByDefault, "Lync App setting switch is OFF by default");
+            Assert.IsFalse(isHubSkypeSwitchOffByDefault, "Lync App setting switch should be OFF by default");
         }
         
 

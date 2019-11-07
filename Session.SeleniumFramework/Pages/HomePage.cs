@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OpenQA.Selenium.Support.UI;
+using Session.SeleniumFramework.Extensions;
+using Session.SeleniumFramework.Support;
 
 namespace Session.SeleniumFramework.Pages
 {
@@ -18,22 +21,21 @@ namespace Session.SeleniumFramework.Pages
             this.userPreferencePage = userPreferencePage;
         }
 
-
         public void Launch()
         {
-            this.webDriver.Navigate().GoToUrl("https://uat.hub.knightfrank.com/#/app/dashboard");
+            this.webDriver.GoToPage("https://uat-smoke.hub.knightfrank.com/#/app/dashboard");
         }
 
         public void OpenUserPreference()
         {
             ClickUserPreferences();
-
             this.userPreferencePage.OpenPreferences();
         }
 
         private void ClickUserPreferences()
         {
-            var webElement = this.webDriver.FindElement(By.Id("topbar-menu-button"));
+            var webElement = this.webDriver.WaitForElementToBeClickableById("topbar-menu-button",WaitTime.Five);
+
             webElement.Click();
         }
     }
