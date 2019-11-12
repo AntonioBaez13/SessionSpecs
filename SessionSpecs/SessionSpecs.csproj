@@ -110,6 +110,7 @@
     </Compile>
     <Compile Include="Hooks\TestHooks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Steps\ExistingContactSteps.cs" />
     <Compile Include="Steps\HomePageSteps.cs" />
     <Compile Include="Steps\LyncAppSteps.cs" />
     <Compile Include="Steps\PreferencesPageSteps.cs" />
